@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News — Soundwave</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,600;1,9..40,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .page-hero { padding: 160px 48px 80px; border-bottom: 1px solid var(--border); }
+    .page-hero .eyebrow-mono { margin-bottom: 12px; }
+    .page-hero h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(4rem,9vw,7rem); letter-spacing: 0.04em; line-height: 0.95; margin-bottom: 20px; }
+    .page-hero p { color: var(--muted); max-width: 500px; font-size: 1.05rem; }
+    .news-full { padding: 80px 48px; display: grid; grid-template-columns: 2fr 1fr; gap: 32px; align-items: start; }
+    .main-news { display: flex; flex-direction: column; gap: 24px; }
+    .big-news-card { border-radius: var(--radius); border: 1.5px solid var(--border); background: var(--surface); padding: 36px; transition: border-color var(--transition), transform var(--transition); text-decoration: none; color: inherit; display: block; }
+    .big-news-card:hover { transform: translateY(-4px); border-color: rgba(255,255,255,0.2); }
+    .news-tag-inline { display: inline-block; font-family: 'Space Mono', monospace; font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); background: rgba(232,255,71,0.1); border: 1px solid rgba(232,255,71,0.25); padding: 3px 10px; border-radius: 100px; margin-bottom: 14px; }
+    .big-news-card h2 { font-size: 1.4rem; font-weight: 700; line-height: 1.3; margin-bottom: 12px; }
+    .big-news-card p { color: var(--muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 14px; }
+    .news-meta-line { font-family: 'Space Mono', monospace; font-size: 0.68rem; color: var(--muted); }
+    .sidebar { display: flex; flex-direction: column; gap: 16px; }
+    .sidebar-title { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; letter-spacing: 0.06em; margin-bottom: 4px; }
+    .sidebar-card { padding: 18px; border-radius: var(--radius-sm); border: 1.5px solid var(--border); background: var(--surface); text-decoration: none; color: inherit; display: block; transition: border-color var(--transition); }
+    .sidebar-card:hover { border-color: rgba(255,255,255,0.2); }
+    .sidebar-card h4 { font-size: 0.92rem; font-weight: 600; margin-bottom: 6px; line-height: 1.35; }
+    .sidebar-card span { font-family: 'Space Mono', monospace; font-size: 0.65rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="logo">Soundwave</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="discover.html">Discover</a></li>
+      <li><a href="genres.html">Genres</a></li>
+      <li><a href="artists.html">Artists</a></li>
+      <li><a href="playlists.html">Playlists</a></li>
+      <li><a href="news.html" class="active">News</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-hero">
+    <p class="eyebrow-mono">Trends · New Releases · Events</p>
+    <h1>Music News</h1>
+    <p>Stay up to date with what's happening in the world of music — new drops, concert announcements, and industry trends.</p>
+  </div>
+  <div class="news-full">
+    <div class="main-news">
+      <a href="#n1" class="big-news-card" id="n1">
+        <div class="news-tag-inline">New Release</div>
+        <h2>Kendrick Lamar Drops Surprise Album Ahead of Summer Tour</h2>
+        <p>The Compton rapper continues to set the bar with an introspective new project exploring identity and legacy in modern America. The album, released without prior announcement, features collaborations with a range of emerging artists.</p>
+        <div class="news-meta-line">March 28, 2026 · Hip-Hop</div>
+      </a>
+      <a href="#n2" class="big-news-card" id="n2">
+        <div class="news-tag-inline">Events</div>
+        <h2>Coachella 2026 Full Lineup Revealed — Three Weekends, Massive Headliners</h2>
+        <p>The beloved Indio, California festival has revealed its full lineup for 2026, expanding to three weekends for the first time. Rock legends share billing with the biggest names in pop and electronic music.</p>
+        <div class="news-meta-line">March 25, 2026 · Festivals</div>
+      </a>
+      <a href="#n3" class="big-news-card" id="n3">
+        <div class="news-tag-inline">Trends</div>
+        <h2>Hyperpop Makes a Comeback in 2026</h2>
+        <p>A new wave of artists is reviving the chaotic, glitchy sound that defined the early 2020s underground scene, blending it with elements of bedroom pop, metal, and trap to create something entirely new.</p>
+        <div class="news-meta-line">March 20, 2026 · EDM / Alt</div>
+      </a>
+      <a href="#n4" class="big-news-card" id="n4">
+        <div class="news-tag-inline">Industry</div>
+        <h2>Streaming Royalties: Artists Push for Fairer Pay in 2026</h2>
+        <p>A coalition of independent artists is lobbying major streaming platforms for a minimum per-stream royalty rate. The movement has gained significant momentum after several high-profile artists spoke out publicly.</p>
+        <div class="news-meta-line">March 15, 2026 · Industry</div>
+      </a>
+    </div>
+    <aside class="sidebar">
+      <div class="sidebar-title">Latest Updates</div>
+      <a href="#" class="sidebar-card">
+        <h4>Taylor Swift Announces "The Eras Tour: Final Chapter"</h4>
+        <span>March 29, 2026</span>
+      </a>
+      <a href="#" class="sidebar-card">
+        <h4>Grammys 2027 Voting Opens — What to Expect</h4>
+        <span>March 27, 2026</span>
+      </a>
+      <a href="#" class="sidebar-card">
+        <h4>SZA's New Single Breaks Spotify Records</h4>
+        <span>March 22, 2026</span>
+      </a>
+      <a href="#" class="sidebar-card">
+        <h4>Vinyl Sales Hit 40-Year High for Third Consecutive Year</h4>
+        <span>March 18, 2026</span>
+      </a>
+      <a href="#" class="sidebar-card">
+        <h4>Beyoncé's "Act III" Album Release Date Confirmed</h4>
+        <span>March 10, 2026</span>
+      </a>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand"><span class="logo">Soundwave</span><p>Your hub for discovering music, artists, and the stories behind the songs.</p></div>
+      <div class="footer-links">
+        <div class="footer-col"><span class="footer-col-title">Explore</span><a href="discover.html">Discover</a><a href="genres.html">Genres</a><a href="artists.html">Artists</a><a href="playlists.html">Playlists</a></div>
+        <div class="footer-col"><span class="footer-col-title">Learn</span><a href="news.html">News</a><a href="reviews.html">Reviews</a><a href="history.html">History</a></div>
+        <div class="footer-col"><span class="footer-col-title">Connect</span><a href="community.html">Community</a><a href="contact.html">Contact</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Soundwave · Dylan Cotner · DE Web Design</span><span>Built with HTML &amp; CSS</span></div>
+  </footer>
+</body>
+</html>
